@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nexa Heavy', sans-serif;
+}
+nav{
+    width: 100%;
+    background-color: #2c3f50;
+    color: #fcfdfe;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+    position: fixed; 
+}
+nav b{
+    font-size: 21px;
+}
+ul{
+   display: flex;
+   gap: 4rem;
+   font-size: 14px;
+}
+li{
+    list-style-type: none;
+}
+li a {
+    color: #fcfdfe;
+    text-decoration: none; 
+    transition: font-size 0.2s ease-in-out; 
+    position: relative; 
+  }
+  
+  li a:hover {
+    font-size: 140%;
+    color: #1abc9c;
+  }
+  
+  li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px; 
+    width: 100%;
+    height: 2px; 
+    background-color: #1abc9c; 
+    transition: width 0.2s ease-in-out; 
+    transform: scaleX(0); 
+  }
+  
+ li a:hover::after {
+    width: 100%; 
+    transform: scaleX(1);
+  }
+.hero{
+    height: 100vh;
+    background-color: #1abc9c;
+    color: #f3faf4;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;    
+}
+h1{
+    font-size: 45px;
+}
+.hero img{
+    border-radius: 100%;
+    background-color: #2c3f50;
+    width:270px;
+    height: 270px; 
+}
+.logo-white{
+    color:#ffffff;          
+}
+.logo-dark, .logo-white{ 
+    display: flex;
+    gap: 1rem;
+}
+.hrS, .hrE{
+    width: 5rem;
+    height: .1rem;
+    border: 1.5px solid #ffffff ;
+    background-color: #ffffff;
+    border-radius: 1rem;
+}
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem;
+    color: #2c3f50; 
+}
+h2{
+    font-size: 35px;
+}
+.hrL, .hrR{
+    width: 5rem;
+    height: .1rem;
+    border: 1.5px solid #2c3f50 ;
+    background-color: #2c3f50;
+    border-radius: 1rem;
+}
+#portfolio img{
+    width: 200px;
+    height: 200px;
+}
+.programming, .accounting{
+    display:flex ;
+    gap: 3rem;
+}
+.programming img , .accounting img{
+    border: 1px solid #4e6171;
+    border-radius: 100%;
+}
+.programming div , .accounting div {
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #ebebeb;  
+}
+#about{
+    background-color: #1abc9c;
+    color: #fcfdfe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem;
+}
+.para{
+    width: 50%;
+    display: flex;
+    gap: 1rem;
+}
+.para p{
+    font-size:18px;
+    line-height: 1.7rem;
+}
+.download{
+    border: 2px solid #ffffff;
+    padding: .7rem 1.3rem;
+    border-radius: .5rem;
+}
+.download a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px; 
+}
+.download i{
+    color: #ffffff;
+    margin-right:.3rem;
+    
+}
+.download a:hover{
+    color: #e6af2e;
+}
+#contact-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 5rem;
+    color: #2c3f50;
+}
+form{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+}
+input, textarea{
+    border: none;
+    border-bottom: 1px solid #acbbc6;
+    padding: .6rem 0 3rem;
+    font-size: 18px;
+    color: #1abc9c;
+}
+input:focus, textarea:focus{
+    outline: none;
+}
+input::placeholder, textarea::placeholder{
+    color: #8d9498;
+    font-size: 19px;
+}
+.btn{
+    width: 100px;
+    padding: 1.5rem;
+    font-size: 18px;
+    color: #fcfdfe;
+    background-color: #1abc9c;
+    border-radius: .5rem;
+    margin-top: 1rem;
+}
+.btn:hover{
+    background-color: #ebebeb;
+    color: #1abc9c;
+}
+.btn:active{
+    background-color: #ebebeb;
+    color: #E6AF2E;
+}
+.communication{
+    color: #fcfdfe;
+    padding:5rem 0;
+    background-color: #2c3f50;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+h4{
+    font-size: 21px;
+}
+.location,.web ,.freelancer {
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+.location{
+    width:260px;
+}
+.location p{
+    font-size: 14px;
+}
+.web {
+    width: 400px;
+}
+.freelancer {
+    width: 260px;
+}
+.free{
+    font-size: 14px;
+    }
+.free a{
+    color: #1abc9c;
+}
+.free a:hover{
+    color:#E6AF2E;
+}
+.social-madia{
+    display: flex;
+    justify-content: center;
+    gap: .4rem;
+} 
+.social-madia div{
+    border: 2px solid #fcfdfe;
+    border-radius:100%;
+    width: 2.7rem;
+    height: 2.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.social-madia i{
+    color:#fcfdfe;
+}
+.social-madia i:hover{
+    color:#e6af2e;
+}
+.copyRight{
+    display: flex;
+    justify-content: center;
+    gap: .2rem;
+    background-color:#1a252f;
+    color: #fcfdfe;
+    padding: 2rem;
+    font-size: 12px;
+}
+@media(min-width:993){
+    .programming, .accounting{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media(max-width:992px){
+    .programming, .accounting{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+@media(max-width:768px){
+    *{
+        font-size: 11px;
+    }
+    .programming, .accounting{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #portfolio img{
+        width: 100px;
+        height: 100px;
+    }
+    .programming div , .accounting div {
+        width: 200px;
+        height: 150px;
+    }    
+    nav{
+        padding: 2rem .3rem;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin: auto;    
+    }
+    nav b{
+        font-size: 18px;
+        text-align: center;
+        margin: auto; 
+    }
+    ul{
+        gap: 1rem;
+        margin: auto; 
+    }
+    li{
+        text-align: center;
+    }
+    h1{
+        font-size: 21px;
+    }
+    .hero p{
+        text-align: center;
+    }
+    h2{
+        font-size: 18px;
+    }
+    .para{
+        width: 80%;
+    }
+    .para p{
+    font-size:14px;
+    }
+    .download{
+        padding: .3rem .7rem;
+    }
+    .download a{
+        font-size: 11px;
+    }
+    form{
+        width: 60%;
+    }
+    input, textarea{
+        font-size: 12px;
+    }
+    input::placeholder, textarea::placeholder{
+        font-size: 13px;
+    }
+    .btn{
+    width: 40px;
+    padding: 1.5rem .5rem;
+    font-size: 11px;
+    }
+    .communication{
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    h4{
+        font-size: 14px;
+    }
+    .location, .web, .freelancer{
+        gap: 1rem;
+    }
+    
+}
